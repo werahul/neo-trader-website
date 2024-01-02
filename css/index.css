@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'Aileron';
+    /* src: url('./assets/fonts/Aileron-Font/Aileron-Regular.otf') format('opentype'); */
+    src: url('/fonts/Aileron-Font/Aileron-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+.max-container{
+    @apply mx-auto max-w-[1440px];
+}
+
+.contact-bg{
+    background-image: url("/images/contact/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.partTwo{
+    background-image: url("/images/contact/vikascenter.png");
+    background-position: top;
+    background-size: conver;
+    background-repeat: no-repeat;
+    height: 580px;
+    border-radius: 0 20px 20px 0;
+}
+
+.animate-float {
+    animation: floating 8s infinite ease-in-out;
+}
+
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
